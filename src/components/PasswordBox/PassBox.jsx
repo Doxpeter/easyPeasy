@@ -4,7 +4,7 @@ export function PassBox() {
   return (
     <div className="flex justify-center">
       <div className="w-full mt-7 md:w-1/2 lg:w-3/5">
-        <label for="password" className="label">
+        <label htmlFor="password" className="label">
           generated password
         </label>
         <form className="flex items-center pr-4 md:pr-6  w-full bg-slate-200 shadow rounded-md">
