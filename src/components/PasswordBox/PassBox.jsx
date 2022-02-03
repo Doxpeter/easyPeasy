@@ -7,9 +7,9 @@ export function PassBox() {
         <label for="password" className="label">
           generated password
         </label>
-        <form className="flex items-center justify-around w-full bg-slate-200 shadow rounded-md">
+        <form className="flex items-center pr-4 md:pr-6  w-full bg-slate-200 shadow rounded-md">
           <input
-            className="appearance-none outline-none w-3/5 bg-transparent rounded placeholder-gray-300 leading-tight py-4 font-Raleway text-center tracking-wide text-base"
+            className="appearance-none flex-1 outline-none w-3/5 bg-transparent rounded placeholder-gray-300 leading-tight py-4 font-Raleway text-center tracking-wide text-base"
             type="text"
             id="password"
             autoComplete="off"

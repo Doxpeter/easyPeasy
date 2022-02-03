@@ -14,7 +14,7 @@ export function RangeSlider() {
         <label for="range" className="label">
           password length
         </label>
-        <div className="flex items-center justify-center space-x-2 w-full h-12 rounded-md shadow bg-slate-200 ">
+        <div className="flex items-center justify-center space-x-2 md:px-4 w-full h-12 rounded-md shadow bg-slate-200 ">
           <input
             type="range"
             id="range"
@@ -22,7 +22,7 @@ export function RangeSlider() {
             max="32"
             value={length}
             onInput={handleChange}
-            className="block w-10/12 h-[2px] appearance-none rounded-md bg-orange-100 outline-none border-[1px] border-orange-300 range"
+            className="block w-10/12 lg:w-[95%] h-[2px] appearance-none rounded-md bg-orange-100 outline-none border-[1px] border-orange-300 range"
           />
           <div className="font-Raleway w-6">{length}</div>
         </div>

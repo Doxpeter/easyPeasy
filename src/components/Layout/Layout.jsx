@@ -2,10 +2,12 @@ import Head from "next/head";
 import { Header } from "../Header/Header";
 import { RangeSlider } from "../RangeSlider/RangeSlider";
 import { PassBox } from "../PasswordBox/PassBox";
+import { Checkbox } from "../CheckBox/Checkbox";
+import { Button } from "../Button/Button";
 
 export function Layout() {
   return (
-    <div className="bg-[#FFFFFE] px-7">
+    <div className="w-full max-h-screen bg-[#FFFFFE] px-7">
       <Head>
         <title>easyPeasy --password generator</title>
         <link
@@ -21,6 +23,13 @@ export function Layout() {
 
       {/* password length bar */}
       <RangeSlider />
+      {/* settings */}
+      <Checkbox settings="include numbers" heading="settings" />
+      <Checkbox settings="include letters" />
+      <Checkbox settings="include symbols" />
+
+      {/* generate button */}
+      <Button />
     </div>
   );
 }
