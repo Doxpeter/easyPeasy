@@ -6,7 +6,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      "Overpass Mono": ["Overpass Mono", "mono"],
+      "Overpass": ["Overpass Mono", "mono"],
       "Raleway": ["Raleway", "sans-serif"],
     },
     extend: {},
