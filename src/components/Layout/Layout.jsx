@@ -2,7 +2,7 @@ import Head from "next/head";
 import { Header } from "../Header/Header";
 import { RangeSlider } from "../RangeSlider/RangeSlider";
 import { PassBox } from "../PasswordBox/PassBox";
-import { Checkbox } from "../CheckBox/Checkbox";
+import { Checkbox } from "../Checkbox/Checkbox";
 import { Button } from "../Button/Button";
 
 export function Layout() {
