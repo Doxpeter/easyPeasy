@@ -1,8 +1,9 @@
 import Head from "next/head";
+import { Header } from "../Header/Header";
 
 export function Layout() {
   return (
-    <div>
+    <div className="bg-[#FFFFFE]">
       <Head>
         <title>easyPeasy --password generator</title>
         <link
@@ -12,9 +13,7 @@ export function Layout() {
       </Head>
 
       {/* header */}
-
-      
-
+      <Header />
     </div>
   );
 }
