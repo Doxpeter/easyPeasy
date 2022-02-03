@@ -1,5 +1,7 @@
 import Head from "next/head";
 import { Header } from "../Header/Header";
+import { DuplicateIcon } from "@heroicons/react/outline";
+import { RangeSlider } from "../RangeSlider/RangeSlider";
 
 export function Layout() {
   return (
@@ -20,17 +22,20 @@ export function Layout() {
           <label for="password" className="label">
             generated password
           </label>
-          <form className="w-full">
+          <form className="flex items-center justify-around w-full bg-slate-200 shadow rounded-md">
             <input
-              className="shadow bg-slate-100  focus:border-orange-200  appearance-none  rounded w-full  placeholder-gray-300 leading-tight px-3 py-4 mb-4 font-Raleway text-center tracking-wide text-base"
+              className="appearance-none outline-none w-3/5 bg-transparent rounded placeholder-gray-300 leading-tight py-4 font-Raleway text-center tracking-wide text-base"
               type="text"
               id="password"
               autoComplete="off"
-              placeholder="password"
+              placeholder=""
             />
+            <DuplicateIcon className="w-7 h-7 text-gray-500" />
           </form>
         </div>
       </div>
+      {/* password length bar */}
+      <RangeSlider />
     </div>
   );
 }
