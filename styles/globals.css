@@ -9,3 +9,11 @@
 h2 {
   @apply text-sm;
 }
+
+.label {
+  @apply font-Raleway;
+  @apply font-extralight;
+  @apply uppercase;
+  font-size: 9px;
+  color: #2a2a2a;
+}
